@@ -8,6 +8,7 @@ namespace AwaitUsing
         {
             Debug.Log("Before await using");
             {
+                // If uncomment Workaround.cs, works correctly
                 await using var sample = new Sample();
             }
             Debug.Log("After await using");
